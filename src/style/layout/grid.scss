@@ -1,0 +1,42 @@
+.wrapper{
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  overflow-x: hidden;
+
+      @include md {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: minmax(auto, auto);
+        grid-template-areas: 
+        " hd hd hd hd hd hd hd"
+        " hr hr hr hr hr hr hr"
+        " mn mn mn mn mn mn mn"
+        " gp gp gp gp gp as as"
+        " sp sp sp sp sp sp sp"
+        " ft ft ft ft ft ft ft";
+      }
+}
+
+.header {
+  grid-area: hd;
+}
+.hero {
+  grid-area: hr;
+}
+.menu-category {
+  grid-area: mn;
+}
+.grid-posts {
+  grid-area: gp;
+}
+.aside {
+  grid-area: as;
+}
+.sponsor-lb{
+  grid-area: sp;
+}
+.footer {
+  grid-area: ft
+}

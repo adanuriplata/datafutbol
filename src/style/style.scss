@@ -1,0 +1,33 @@
+/*
+Theme Name: DataFutbol
+Theme URI: https://www.wordpressify.co
+Author: Adan Uri Plata
+Author URI: https://www.adanuriplata.io
+Description: Data Futbol Theme.
+Version: 1.0
+Tags: responsive, clean, minimal, modern, documentation
+*/
+
+//Normalize
+//@import '../../node_modules/normalize-scss/sass/normalize';
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/aos/src/sass/aos';
+@import 'config';
+
+//Layout
+@import 'layout/grid';
+
+//Base
+@import 'base/base';
+
+
+//Components
+@import 'components/hero';
+@import 'components/header';
+@import 'components/menu_category';
+@import 'components/grid_posts';
+@import 'components/footer';
+@import 'components/aside';
+@import 'components/sponsor_lb';
+@import 'components/suscribe_as';
+@import 'components/shadow';

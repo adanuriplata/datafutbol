@@ -1,0 +1,75 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Condensed|Slabo+27px');
+
+//fonts
+$header-font: 'Fjalla One', sans-serif;
+$title-font: 'Roboto Condensed', serif;
+$para-font: 'Slabo 27px', sans-serif;
+
+//fonts size
+$header: 65px;
+$item-menu: 20px;
+$extract-size: 15px;
+$footer-copyrigth: 12px;
+$title-post-grid: 17px;
+
+//colors
+$black: #191919;
+$white: rgb(239, 243, 245);
+$bg-body: #F7F7F7;
+$green-ligth: #E8F3EC;
+$bg-hero: linear-gradient(to right, #360033, #0b8793);
+$extrac: #757575;
+$bg-footer: #F1F3F4;
+$links: #20677B;
+//Gutter
+$gutter: 1em;
+
+//BreakPoints Media queries
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+   @media (min-width: $screen+'px') {
+       @content;
+   }
+}

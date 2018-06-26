@@ -1,0 +1,25 @@
+.menu-category{
+  background: $white;
+  text-align: center;
+  font-size: $item-menu;
+  padding: 10px;
+  ul {
+    padding: 0;
+    li{
+      padding-bottom: 5px;
+      :hover{
+        border-bottom: solid 3px $links;
+      }
+      @include md{
+      padding: 0;
+      }
+    }
+    @include md{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+

@@ -1,0 +1,27 @@
+.footer{
+  display: block;
+  margin-top: 2.5rem;
+  background: $bg-footer;
+  &__links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: .5rem;
+    div{
+      max-width: 75%;
+    }
+  }
+  &__copyrigth{
+    margin: 0 auto;
+    max-width: 1000px;;
+    border-top: solid 1px $extrac;
+    padding: 10px 0;
+    font-size: $footer-copyrigth;
+    color: $black;
+    text-align: center;
+    p {
+      margin: 0;
+      color: $extrac;
+    }
+  }
+}

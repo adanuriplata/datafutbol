@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: $black;
+  color: $white;
+  padding: 1rem;
+  > div, nav{
+    padding-bottom: 10px;
+    @include md {
+      padding-bottom: 0;
+    }
+  }
+  &__menu-social{
+    width: 400px;
+    ul{
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      a{
+        color: $white;
+      }
+    }
+  }
+  &__logo{
+    max-width: 90px;
+    img{
+      max-width: 100%;
+    }
+  }
+}   

@@ -1,0 +1,38 @@
+.grid-posts{
+  display: block;
+  padding: 15px;
+
+  @include md {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+      }
+  @include lg {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+      }
+
+  &__post{
+    //text-align: center;
+    //max-width: 280px;
+    padding: 1rem;
+    background: white;
+    &__title {
+      font-size: $title-post-grid;
+      font-family: $title-font;
+      margin: .5rem 0;
+      text-transform: uppercase;
+    }
+    &__extract{
+      font-size: $extract-size; 
+      color: $extrac;
+      font-family: $para-font;
+    }
+    &__img{
+      width: 100%;
+    }
+  }
+}
