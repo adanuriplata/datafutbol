@@ -1,0 +1,43 @@
+.author{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__info{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    &__avatar{
+      margin: 16px 10px 16px 40px;
+      width: 50px;
+      img{
+        border-radius: 50%;
+        max-width: 100%;
+      }
+    }
+    &__name-container {
+      width: 300px;
+      padding: 0;
+      margin: 10px 10px 10px 0; 
+      &__name{
+        color: $black;
+        font-size: $avatar-name;
+        margin-bottom: 7px;
+        }
+      &__description{
+      font-size: $avatar-description;
+      margin-top: 7px;
+      color: $black-light;
+      }
+    }
+  }
+  &__share-post{
+      align-self: flex-end;
+      margin: 0 0 26px 30px;
+      border: solid 1px green;
+      margin-right: 40px;
+      a{
+        padding: 20px;
+      }
+    }
+  }

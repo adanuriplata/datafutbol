@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+  <main class="main-index">
     <div class="hero">
       <div class="hero__title" data-aos="zoom-in">DATA FUTBOL</div>
     </div>
@@ -21,7 +22,8 @@
       <section class="grid-posts">
         <?php while (have_posts() ) : the_post(); ?>
           <article class="grid-posts__post">
-              <img class="grid-posts__post__img" src="https://mt.brightspotcdn.com/dims4/default/da2fdcd/2147483647/resize/390x%3E/quality/90/?url=https%3A%2F%2Fmt.brightspotcdn.com%2F21%2F63%2F7741209c41a8a01c557ec3a3b65d%2F8.jpg" alt="imagen de post">
+             <?php the_post_thumbnail('small-thumbnail-1') ?>
+              <!-- <img class="grid-posts__post__img" src="https://mt.brightspotcdn.com/dims4/default/da2fdcd/2147483647/resize/390x%3E/quality/90/?url=https%3A%2F%2Fmt.brightspotcdn.com%2F21%2F63%2F7741209c41a8a01c557ec3a3b65d%2F8.jpg" alt="imagen de post"> -->
             <h3 class="grid-posts__post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <p class="grid-posts__post__extract"><?php echo(get_the_excerpt()); ?></p>
             <div class="grid-posts__post__tags">
@@ -43,6 +45,7 @@
     <div class="sponsor-lb">
       <img src="https://download-twitter-videos.com/es/img/728.jpg" alt="">
     </div>
+  </main>
     <?php get_footer(); ?>
 </body>
 </html> 

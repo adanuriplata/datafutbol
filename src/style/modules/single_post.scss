@@ -1,0 +1,48 @@
+.single-post__hero{
+  margin: 0 auto;
+  max-width: 800px;
+  &__title{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: $single-post-title;
+    text-transform: capitalize;
+    font-family: $header-font;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 30px; 
+  }
+  &__copy{
+    font-size: $single-post-copy;
+    font-family: $para-font;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: $black-light;
+  }
+}
+
+.single-post__thumbnail{
+  max-width:800px;
+  overflow:hidden;
+  margin: 0 auto;
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.single-post__content{
+  font-family: $para-font;
+  color: $black;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 21px;
+}
+
+.single-post-footer{
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}

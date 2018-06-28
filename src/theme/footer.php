@@ -47,7 +47,7 @@
         <div class="header__logo"><img src="https://www.uplabs.com/logos/uplabs/default--color.svg" alt="Logo"></div>
       </div>
       <div class="footer__copyrigth">
-        <p>Derechos Reservados &#169 2018 <br> <span> Code + Design By <a href="">AdanUriPlata</a></span></p>
+        <p>Derechos Reservados &#169 <?php echo date('Y'); ?> <br> <span> Code + Design By <a href="">AdanUriPlata</a></span></p>
       </div>
     </footer>
   </div> 

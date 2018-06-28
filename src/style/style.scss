@@ -21,6 +21,9 @@ Tags: responsive, clean, minimal, modern, documentation
 @import 'base/base';
 
 
+//modules
+@import 'modules/single_post';
+
 //Components
 @import 'components/hero';
 @import 'components/header';
@@ -31,3 +34,8 @@ Tags: responsive, clean, minimal, modern, documentation
 @import 'components/sponsor_lb';
 @import 'components/suscribe_as';
 @import 'components/shadow';
+@import 'components/author_share';
+@import 'components/tags';
+@import 'components/grid-posts-ads';
+
+

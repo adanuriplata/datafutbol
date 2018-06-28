@@ -1,0 +1,22 @@
+.tags{
+  
+  ul {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+
+.btn-raw{
+  border: solid 1px $black-light;
+  display: block;
+  color: $black-light;
+  margin: 5px 10px;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: $tags;
+  a {
+    padding: 10px;
+  }
+}

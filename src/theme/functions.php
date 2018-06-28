@@ -8,6 +8,19 @@ function datafutbol_load_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'datafutbol_load_styles');
 
+
+function datafutbol_setup(){
+  //image support
+    add_theme_support('post-thumbnails');
+
+  add_image_size( 'small-thumbnail-2', 720, 720, true );
+  add_image_size( 'small-thumbnail-1', 210, 210, true );
+	add_image_size( 'square-thumbnail', 80, 80, true );
+	add_image_size( 'banner-image', 1024, 1024, true );
+}
+add_action( 'after_setup_theme' ,'datafutbol_setup');
+
+
 // Customize excerpt word count length
 function custom_excerpt_length() {
 	return 18;
