@@ -2,13 +2,13 @@
   display: block;
   padding: 15px;
 
-  @include md {
+  @include cust(877) {
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
     grid-template-rows: auto;
     grid-gap: 1rem;
       }
-  @include lg {
+  @include cust(1264) {
     grid-template-columns:  repeat(3, 1fr);
       }
 

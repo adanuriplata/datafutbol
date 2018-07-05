@@ -13,11 +13,12 @@ $extract-size: 15px;
 $footer-copyrigth: 12px;
 $title-post-grid: 17px;
 $single-post-title: 45px;
-$avatar-name: 13px;
-$avatar-description: 11px;
+$avatar-name: 15px;
+$avatar-description: 13px;
 $single-post-content: 21px;
 $single-post-copy: 19px;
 $tags: 13px;
+$ran-post-title: 15px;
 
 //colors
 $black: #191919;
@@ -76,7 +77,7 @@ $screen-xl-min: 1200px;
 }
 
 // Custom devices
-@mixin rwd($screen) {
+@mixin cust($screen) {
    @media (min-width: $screen+'px') {
        @content;
    }

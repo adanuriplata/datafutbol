@@ -1,0 +1,126 @@
+.comments, .comments-list {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+.comment-respond{
+  width: 100%;
+}
+.comment-notes{
+  color: $black-light;
+}
+
+.logged-in-as a{
+  color: $black-light;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.comment-form {
+  text-transform: uppercase;
+  p{
+    text-align: left;
+  }
+  label, input{
+    display: block;
+  }
+  
+  #comment { //Textarea
+  max-width: 580px;
+  height: 100px;
+  resize: none;
+  }
+}
+.comment-notes{
+  text-align: left;
+}
+
+.comment-form-cookies-consent{
+ text-transform: lowercase;
+ color: $black-light;
+}
+.submit, .reply{
+  color: $black-light;
+  font-size: 15px; 
+  font-family: $header-font;
+  padding: 3px 5px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  border: solid $black-light 1px; 
+  transition: color .5s;
+  cursor: pointer;
+  &:hover{
+    //padding: 4px 6px;
+    background: rgba(118, 238, 118, 0.479);
+    color: rgb(8, 44, 8);
+    border: solid rgb(66, 168, 66) 1px;
+      }
+  }
+
+
+
+  //Styles for comments list
+  .comments-list{
+    text-align: left;
+    ul{
+      padding: 5px;
+    }
+  }
+
+  .comment-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+      font-family: $para-font;
+    }
+    .fn{
+      font-family: $header-font;
+      font-style: normal;
+      font-size: 15px;
+      text-transform: capitalize;
+      color: #0082A9;
+      &::after{
+        content: ' : ';
+      }
+    }
+    .says{
+      display: none;
+    }
+  }
+
+  .comment{
+    padding: 20px;
+    background: white;
+    margin-top: 15px;
+  }
+
+ .children {
+   background: $white;
+  &::before{
+    content: ' -> '
+  }
+ }
+
+  .reply {
+    font-size: 13px;
+    display: inline-block;
+  }
+  .comment-author{
+    @include sm{
+        margin: 2px 15% 2px 2PX;
+     }
+  }
+   .comment-meta{
+     @include sm{
+        margin: 5px 5px 5px 30%;
+     }
+    
+    a{
+      color: $black-light;
+      font-size: 14px;
+    }
+  }

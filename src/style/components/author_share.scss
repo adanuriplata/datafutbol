@@ -23,6 +23,7 @@
         color: $black;
         font-size: $avatar-name;
         margin-bottom: 7px;
+        text-transform: capitalize;
         }
       &__description{
       font-size: $avatar-description;

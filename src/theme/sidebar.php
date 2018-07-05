@@ -2,6 +2,9 @@
       <div class="sponsor">
         <img src="https://placehold.it/300x250/56aace/fff" alt="">
       </div>
+      <?php if(is_active_sidebar('sidebar1')) : ?>
+        <?php dynamic_sidebar('sidebar1'); ?>
+      <?php endif ; ?>
       <div class="subscribe shadow" data-aos="fade-left">
         <h4>Suscribete</h4>
         <p>Enterate cada semana de las mejores noticias <br> 1 correo cada semana no SPAM</p>

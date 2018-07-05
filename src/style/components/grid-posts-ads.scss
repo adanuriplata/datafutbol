@@ -1,22 +1,87 @@
 .grid-post-ads{
   text-align: center;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
+  background: $bg-footer;
+
   @include md{
     display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
   }
+
+  @include lg{
+    grid-template-columns: 333px 333px 333px;
+    grid-gap: 10px;
+  }
+
+  article{
+    background: white;
+    border-radius: 5px;
+    box-shadow:  0 1px 7px rgba(0,0,0,.05);
+  }
+
   &__post{
     margin: 0 auto;
     margin-top: 30px;
     max-width: 300px;
-    h3 {
-      padding: 10px;
-      font-weight: 400;
+    padding: 10px 5px;
+
+    &__title{
+      a {
+        padding: 5px 15px;
+        font-weight: bold;
+        font-size: $ran-post-title;
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    &__a-img img{
+      transition: opacity .6s;
+      &:hover{
+        opacity: .6;
+      }
+    }
+
+    &__footer{
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 15px 5px 15px;
+      align-items: center;
+
+      ul {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+        a {
+        color: $black-light;
+        font-size: 12px; 
+        font-family: $header-font;
+        padding: 3px 5px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        border: solid $black-light 1px;
+        transition: color .5s;
+          &:hover{
+            border: none;
+            padding: 4px 6px;
+            background: $black-light;
+            color: $white;
+          }
+        }
+      }
+
+      &__date{
+        color: $black-light;
+        font-size: 12px; 
+        font-family: $header-font;
+      }
     }
   }
+
   &__add{
     margin: 0 auto;
     max-width: 300px;

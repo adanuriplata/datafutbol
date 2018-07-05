@@ -1,0 +1,18 @@
+Index:
+-Cargar menus de Footer
+-Menus Cargar diferentes post dependiendo de seccion
+-Que funcione EL de suscribirse
+
+Single.php
+-Carga de imagen de author dinamica
+-Insertar tags <a> a datos de author
+-Botones de Share con redes sociales
+------END-Cargar posts dinamicamente-----
+
+------END-----Cargar tags dinamicamente---
+------END-----Cargar de comentarios-------
+
+------END-----Crear pagina 404.php--------
+
+Modificar pagina Page.php
+

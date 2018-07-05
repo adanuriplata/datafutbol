@@ -1,0 +1,23 @@
+.main-404 {
+  margin: 0 auto;
+  text-align: center;
+  color: $black-light;
+  padding-top: 40px;
+}
+.texto{
+  //padding-top: 30px;
+  color: $black-light;
+  &__404{
+    font-size: 40px;
+  }
+  &__p{
+    font-size: 19px;
+  }
+}
+
+.post-relacionados{
+  margin-top: 60px;
+  h2{
+    padding: 10px;
+  }
+}
