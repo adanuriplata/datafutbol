@@ -23,6 +23,7 @@ Tags: responsive, clean, minimal, modern, documentation
 
 //modules
 @import 'modules/single_post';
+@import 'modules/generic-page';
 
 //Components
 @import 'components/hero';
@@ -39,5 +40,8 @@ Tags: responsive, clean, minimal, modern, documentation
 @import 'components/grid-posts-ads';
 @import 'components/comments';
 @import 'components/404';
+@import 'components/pagination';
+@import 'components/search';
+@import 'components/tips-tutoriales';
 
 

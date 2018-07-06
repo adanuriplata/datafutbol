@@ -3,15 +3,13 @@
     <main class="main-single-post">
       <div class="single-post__hero">
         <?php the_title('<h1 class="single-post__hero__title">','</h1>'); ?>
-        <!-- <p class="single-post__hero__copy">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p> -->
         <p class="single-post__hero__copy"><?php echo get_the_excerpt();?></p>
         <div class="author">
           <div class="author__info">
-            <!-- <figure class="author__info__avatar"><img src="https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_1280.png" alt=""></figure> -->
             <figure class="author__info__avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 52 ); ?></figure>
             <div class="author__info__name-container">
               <p class="author__info__name-container__name"><?php echo get_the_author_link(); ?></p>
-              <p class="author__info__name-container__description">Author, Progradamor, seguidor " i cna i cna just do it "</p>
+              <p class="author__info__name-container__description"><?php echo get_the_author_meta('description') ?></p>
             </div>
           </div>
           <div class="author__share-post">
@@ -33,7 +31,7 @@
             <figure class="author__info__avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 52 ); ?></figure>
             <div class="author__info__name-container">
               <p class="author__info__name-container__name"><?php the_author_link(); ?></p>
-              <p class="author__info__name-container__description">Author, Progradamor, seguidor " i cna i cna just do it "</p>
+              <p class="author__info__name-container__description"><?php echo get_the_author_meta('description') ?></p>
             </div>
           </div>
           <div class="author__share-post">
@@ -108,3 +106,4 @@
       </ul>
     </div>
 <?php get_footer(); ?>
+

@@ -21,7 +21,7 @@
     <?php if (has_custom_logo()) {?>
       <div class="header__logo"><?php the_custom_logo(); ?></div>
     <?php }else{ ?>
-        <div class="header__logo"><img src=" <?php echo esc_url( 'https://www.uplabs.com/logos/uplabs/default--color.svg' ); ?> " alt="Logo"></div>
+        <div class="header__logo"><a href="<?php echo site_url(); ?>"><img src="<?php $url = home_url()."/wp-content/themes/DataFutbol/img/dataFutbol-3.png" ; echo esc_url( $url ); ?> " alt="Logo"></a></div>
     <?php } ?>
     <!-- Social Menu -->
         <?php 
@@ -33,7 +33,7 @@
           );
           wp_nav_menu($args);
         ?>
-    <!-- END SOcial Menu -->
+    <!-- END Social Menu -->
       <div class="header__search">
         <div><?php get_search_form();?></div>
       </div>

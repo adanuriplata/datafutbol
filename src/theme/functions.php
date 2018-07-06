@@ -51,7 +51,8 @@ function dataFutbol_menus(){
   register_nav_menus( array(
     'header-menu' => __('Header Menu', 'datafutbol'),
     'social-menu' => __('Social Menu', 'datafutbol'),
-    'footer-menu' => __('Footer Menu', 'datafutbol')
+    'footer-menu' => __('Footer Menu', 'datafutbol'),
+    'keywords-menu' => __('keywords Menu', 'datafutbol')
   ));
 }
 

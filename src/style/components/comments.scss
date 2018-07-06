@@ -12,7 +12,7 @@
 }
 
 .logged-in-as a{
-  color: $black-light;
+  color: $blue-datafutbol;
   font-size: 14px;
   text-transform: capitalize;
 }
@@ -52,9 +52,9 @@
   cursor: pointer;
   &:hover{
     //padding: 4px 6px;
-    background: rgba(118, 238, 118, 0.479);
-    color: rgb(8, 44, 8);
-    border: solid rgb(66, 168, 66) 1px;
+    background: $blue-datafutbol;
+    color: white;
+    border: solid $blue-datafutbol 1px;
       }
   }
 
@@ -82,7 +82,7 @@
       font-style: normal;
       font-size: 15px;
       text-transform: capitalize;
-      color: #0082A9;
+      color: $blue-datafutbol;;
       &::after{
         content: ' : ';
       }

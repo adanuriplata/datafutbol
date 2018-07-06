@@ -1,0 +1,10 @@
+#searchsubmit{
+  border: solid 1px white;
+  color: white;
+  background: local;
+  cursor: pointer;
+  &:hover{
+    border: solid 1px #4956DA;
+    background: #4956DA;
+  }
+}    

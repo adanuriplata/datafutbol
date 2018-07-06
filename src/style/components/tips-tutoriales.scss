@@ -1,0 +1,27 @@
+.tips-tutoriales{
+  max-width: 300px;
+  text-align: center;
+  background: white;
+  padding: 5px;
+  margin: 10px 0;
+  ul{
+    padding-left: 0;
+  }
+  &__post{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    &__text{
+      padding-left: 10px;
+      &__title{
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+      &__excerpt{
+        font-size: 11px;
+        color: $extrac;
+        font-family: $para-font;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.paginacion{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  a{
+    color: $blue-datafutbol;
+  }
+}
+.current{
+  color: $black-light;
+}

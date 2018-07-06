@@ -1,11 +1,11 @@
 Index:
 -Cargar menus de Footer
--Menus Cargar diferentes post dependiendo de seccion
+----Menus Cargar diferentes post dependiendo de seccion---
 -Que funcione EL de suscribirse
 
 Single.php
--Carga de imagen de author dinamica
--Insertar tags <a> a datos de author
+-----END-Carga de imagen de author dinamica----
+-----END-Insertar tags <a> a datos de author------
 -Botones de Share con redes sociales
 ------END-Cargar posts dinamicamente-----
 
@@ -13,6 +13,12 @@ Single.php
 ------END-----Cargar de comentarios-------
 
 ------END-----Crear pagina 404.php--------
+------END-----Paginacion--------
 
 Modificar pagina Page.php
 
+
+
+
+urivanhalen
+Irunadaderocker5640
