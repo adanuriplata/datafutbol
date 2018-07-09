@@ -22,6 +22,7 @@ const postcss = require('gulp-postcss');
 const remoteSrc = require('gulp-remote-src');
 const sass = require('gulp-sass')
 const sourcemaps = require('gulp-sourcemaps');
+const prefix = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const unzip = require('gulp-unzip');
 const zip = require('gulp-zip');
@@ -261,6 +262,9 @@ gulp.task('process-images', ['copy-theme-prod'], () => {
 	return gulp.src('src/theme/img/**')
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(imagemin([
+			imagemin.gifsicle({ interlaced: true }),
+			imagemin.jpegtran({ progressive: true }),
+			imagemin.optipng({ optimizationLevel: 5 }),
 			imagemin.svgo({ plugins: [{ removeViewBox: true }] })
 		], {
 			verbose: true
@@ -268,10 +272,24 @@ gulp.task('process-images', ['copy-theme-prod'], () => {
 		.pipe(gulp.dest('dist/themes/' + themeName + '/img'));
 });
 
+
+//STYLE options
+var sassOptions = {
+	outputStyle: 'compressed'
+};
+
+var prefixerOptions = {
+	browsers: ['last 2 versions']
+};
+
 gulp.task('style-prod', () => {
 	return gulp.src('src/style/style.scss')
-		.pipe(sass().on("error", sass.logError))
+		.pipe(plumber({ errorHandler: onError }))
+		.pipe(sass(sassOptions).on("error", sass.logError))
+		.pipe(prefix(prefixerOptions))
 		.pipe(gulp.dest('dist/themes/' + themeName))
+		// .pipe(cssnano())
+		// .pipe(gulp.dest('dist/themes/' + themeName))
 });
 
 gulp.task('header-scripts-prod', () => {
